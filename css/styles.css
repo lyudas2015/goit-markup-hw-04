@@ -7,8 +7,12 @@
   --grey-txt-cl: #434455;
   --black-txt-cl: #2e2f42;
   --violet-txt-cl: #4d5ae5;
+  --hover-cl: #404BBF;
+  
 
   /*bg-colors*/
+  --blue-bcl: #4d5ae5;
+  --navy-bcl: #404BBF;
 
   /*others*/
 }
@@ -63,7 +67,7 @@ img {
     color: var(--grey-txt-cl); 
 }
 .title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -104,7 +108,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--violet-txt-cl);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -166,7 +170,6 @@ address {
 }
 
 .hero-title {
-  /* padding-top: 188px; */
   max-width: 496px;
   margin: 0 auto;
 
@@ -194,7 +197,7 @@ address {
   letter-spacing: 0.04em;
   color: var(--white-txt-cl);
 
-  background-color: #4d5ae5;
+  background-color: var(--blue-bcl);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
@@ -203,7 +206,7 @@ address {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--navy-bcl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -273,9 +276,78 @@ background: #FFFFFF;
   text-align: center;
 }
 .team-position {
+  margin-bottom: 8px;
   text-align: center;
   }
 
+  /* Social icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+
+  gap: 24px;
+}
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-bcl);
+  }
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--navy-bcl);
+}
+
+/* .social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: #2e2f42;
+} */
+
+/* Секція Customers */
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.customers-title {
+  margin-bottom: 69px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+/* .customers-item {
+  padding: 16px 32px;
+} */
+.customers-item:not(:last-child) {
+  margin-right: 24px;
+}
+.customers-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 168px;
+  height: 88px;
+  color: #8E8F99;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+.customers-item-link:hover,
+.customers-item-link:focus {
+  border: 1px solid var(--navy-bcl);
+  color: #404BBF;
+}
+
+.customers-item-icon,
+.customers-item-icon {
+  fill: currentColor;
+}
 /*Секція Footer*/
 .footer {
   padding-top: 100px;
