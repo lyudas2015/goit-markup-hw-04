@@ -322,7 +322,7 @@ background: #FFFFFF;
   background-color: var(--navy-bcl);
 }
 .social-media-icon {
-  fill: #e7e9fc;
+  fill: #f4f4fd;
 }
 
 
@@ -443,6 +443,8 @@ background: #FFFFFF;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-item:hover,
 .footer-social-item:focus {
@@ -529,12 +531,17 @@ margin-right: 0;
 }
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
+  border: 0.5px solid #F4F4FD;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-box {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+
+  border: 1px solid #E7E9FC;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border-top: 0;
 } 
 
 .portfolio-text {
